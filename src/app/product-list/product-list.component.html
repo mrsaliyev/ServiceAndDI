@@ -1,0 +1,11 @@
+<h2>Product list component child</h2>
+<p>Product List Detail!</p>
+<button type="button" (click)="getProducts()">
+  Get Products Detail
+</button>
+
+<div *ngFor="let product of productList">
+  <p>
+    Name: {{product.name}},   Description: {{product.description}}
+  </p>
+</div>

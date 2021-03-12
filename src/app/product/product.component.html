@@ -1,0 +1,11 @@
+<h2>Product component Child</h2>
+<p>Product List!</p>
+<button type="button" (click)="getProducts()">
+  Get Products
+</button>
+
+<div *ngFor="let product of productList">
+  <ul>
+    <li>{{product.name}}</li>
+  </ul>
+</div>
